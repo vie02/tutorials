@@ -30,6 +30,7 @@ public class FrontControllerServlet extends HttpServlet {
             );
             return (FrontCommand) type
               .asSubclass(FrontCommand.class)
+              .getDeclaredConstructor()
               .newInstance();
         } catch (Exception e) {
             return new UnknownCommand();

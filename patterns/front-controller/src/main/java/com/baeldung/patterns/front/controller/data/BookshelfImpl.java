@@ -16,7 +16,7 @@ public class BookshelfImpl extends ArrayList<Book> implements Bookshelf {
 
     @Override
     public Book findByTitle(String title) {
-        return this.stream()
+        return stream()
           .filter(book -> book.getTitle().toLowerCase().contains(title.toLowerCase()))
           .findFirst()
           .orElse(null);
