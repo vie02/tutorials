@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.baeldung.patterns.front.controller.commands</OriginalElement>
+  <nodes>
+    <node x="268.0" y="171.0">com.baeldung.patterns.front.controller.data.BookshelfImpl</node>
+    <node x="0.0" y="336.0">com.baeldung.patterns.front.controller.commands.FrontCommand</node>
+    <node x="444.0" y="336.0">com.baeldung.patterns.front.controller.FrontControllerServlet</node>
+    <node x="0.0" y="148.0">com.baeldung.patterns.front.controller.data.BookImpl</node>
+    <node x="31.5" y="551.0">com.baeldung.patterns.front.controller.commands.UnknownCommand</node>
+    <node x="211.5" y="551.0">com.baeldung.patterns.front.controller.commands.SearchCommand</node>
+    <node x="60.5" y="0.0">com.baeldung.patterns.front.controller.data.Book</node>
+    <node x="268.0" y="0.0">com.baeldung.patterns.front.controller.data.Bookshelf</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.baeldung.patterns.front.controller.commands.UnknownCommand" target="com.baeldung.patterns.front.controller.commands.FrontCommand">
+      <point x="0.0" y="-27.0" />
+      <point x="111.5" y="526.0" />
+      <point x="99.75" y="526.0" />
+      <point x="-99.75" y="82.5" />
+    </edge>
+    <edge source="com.baeldung.patterns.front.controller.data.BookshelfImpl" target="com.baeldung.patterns.front.controller.data.Bookshelf">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.baeldung.patterns.front.controller.data.BookImpl" target="com.baeldung.patterns.front.controller.data.Book">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.baeldung.patterns.front.controller.commands.SearchCommand" target="com.baeldung.patterns.front.controller.commands.FrontCommand">
+      <point x="0.0" y="-27.0" />
+      <point x="287.5" y="526.0" />
+      <point x="299.25" y="526.0" />
+      <point x="99.75" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9216" x="387.5" y="302.5" />
+  <SelectedNodes>
+    <node>com.baeldung.patterns.front.controller.FrontControllerServlet</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
