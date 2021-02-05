@@ -16,7 +16,7 @@ public class FrontControllerServlet extends HttpServlet {
       HttpServletResponse response
     ) throws ServletException, IOException {
         FrontCommand command = getCommand(request);
-        command.init(getServletContext(), request, response);
+        command.init(request, response);
         command.process();
     }
 
