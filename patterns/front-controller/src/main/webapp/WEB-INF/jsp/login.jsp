@@ -13,8 +13,9 @@
 <body>
     <p>Please input an username: </p>
     <h2>Login</h2>
-    <form action="/?command=Login" method="POST">
+    <form action="<%=request.getContextPath()%>/?command=Login" method="POST">
         <input type="text" name="username" placeholder="Username" />
+        <input type="hidden" name="redirect" value="<%= (String) request.getAttribute("redirect")%>" />
         <input type="submit" value="Proceed">
     </form>
 </body>

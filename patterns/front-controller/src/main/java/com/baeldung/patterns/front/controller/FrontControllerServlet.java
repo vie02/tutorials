@@ -15,6 +15,15 @@ public class FrontControllerServlet extends HttpServlet {
       HttpServletRequest request,
       HttpServletResponse response
     ) throws ServletException, IOException {
+        doCommand(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doCommand(request, response);
+    }
+
+    private void doCommand(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         FrontCommand command = getCommand(request);
         command.init(request, response);
         command.process();
