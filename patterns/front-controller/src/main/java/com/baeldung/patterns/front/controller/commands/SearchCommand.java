@@ -9,6 +9,7 @@ import java.io.IOException;
 public class SearchCommand extends FrontCommand {
     @Override
     public void process() throws ServletException, IOException {
+        super.process();
         Book book = new BookshelfImpl().getInstance()
           .findByTitle(request.getParameter("title"));
         if (book != null) {

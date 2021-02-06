@@ -3,10 +3,9 @@ package com.baeldung.patterns.front.controller.commands;
 import javax.servlet.ServletException;
 import java.io.IOException;
 
-public class UnknownCommand extends FrontCommand {
+public class LoginCommand extends FrontCommand {
     @Override
     public void process() throws ServletException, IOException {
-        super.process();
-        forward("unknown");
+        forward("login");
     }
 }
