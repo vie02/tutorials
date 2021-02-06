@@ -11,7 +11,8 @@ public class FilterManager {
         FilterChain filterChain = new FilterChainImpl(
                 new AuthenticationFilter(onIntercept),
                 new VisitorCounterFilter()
-        );
+//                new LoggingFilter()
+                );
         filterChain.doFilter(request, response);
     }
 }

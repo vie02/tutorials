@@ -21,7 +21,7 @@ public class LoggingFilter extends BaseFilter {
         chain.doFilter(request, response);
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         String username = Optional
-                .ofNullable(httpServletRequest.getAttribute("username"))
+                .ofNullable(httpServletRequest.getSession(true).getAttribute("username"))
                 .map(Object::toString)
                 .orElse("guest");
 

@@ -15,6 +15,7 @@ public abstract class BaseFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         log.info("Initialize filter: {}", getClass().getSimpleName());
+        this.filterConfig = filterConfig;
     }
 
     @Override
